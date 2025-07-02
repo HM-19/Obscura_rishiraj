@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Calibrating Freedom...</title>
+  <style>
+    body {
+      background: #0f0f0f;
+      color: #32ffc7;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .pulse-grid {
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .pulse-grid h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .dot {
+      display: inline-block;
+      height: 10px;
+      width: 10px;
+      background: #32ffc7;
+      border-radius: 50%;
+      margin: 0 4px;
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+    .dot:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+    .dot:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.2; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.4); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="pulse-grid">
+    <h1>Calibrating Freedom</h1>
+    <div>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+</body>
+</html>
