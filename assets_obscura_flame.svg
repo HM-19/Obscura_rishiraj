@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <radialGradient id="flameGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#32ffc7" />
+      <stop offset="100%" stop-color="#0f0f0f" />
+    </radialGradient>
+  </defs>
+  <path d="M60 15 C65 30, 80 30, 60 50 C40 30, 55 30, 60 15 Z" fill="url(#flameGlow)" />
+  <rect x="55" y="50" width="10" height="35" rx="2" fill="#32ffc7" />
+  <path d="M40 90 Q60 110 80 90 Q60 100 40 90 Z" fill="#0f0f0f" stroke="#32ffc7" stroke-width="1.5"/>
+</svg>
